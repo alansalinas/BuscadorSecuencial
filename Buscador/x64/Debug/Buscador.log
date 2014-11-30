@@ -1,0 +1,28 @@
+﻿Build started 11/30/2014 2:13:59 PM.
+     1>Project "C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\Buscador\Buscador.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_LIB /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\Buscador\gpu.cu" 
+       CudaBuild:
+         Compiling CUDA source file gpu.cu...
+         cmd.exe /C "C:\Users\boris\AppData\Local\Temp\tmp28f44f7f41284b10bd9b3f34f3a5bc7d.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o x64\Debug\gpu.cu.obj "C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\Buscador\gpu.cu"
+         
+         C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\Buscador>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o x64\Debug\gpu.cu.obj "C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\Buscador\gpu.cu" 
+         gpu.cu
+     1>C:/Users/boris/Documents/Visual Studio 2013/Projects/Buscador/Buscador/gpu.cu(98): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/boris/Documents/Visual Studio 2013/Projects/Buscador/Buscador/gpu.cu(104): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\Buscador.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt Buscador.cpp
+         Buscador.cpp
+     1>Buscador.cpp(53): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>Buscador.cpp(76): warning C4305: 'initializing' : truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\x64\Debug\Buscador.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\x64\Debug\Buscador.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\x64\Debug\Buscador.lib" /MACHINE:X64 x64\Debug\gpu.cu.obj
+         x64\Debug\Buscador.obj
+         x64\Debug\stdafx.obj
+         Buscador.vcxproj -> C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\x64\Debug\Buscador.exe
+     1>Done Building Project "C:\Users\boris\Documents\Visual Studio 2013\Projects\Buscador\Buscador\Buscador.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.61
