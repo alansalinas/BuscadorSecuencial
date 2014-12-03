@@ -32,26 +32,25 @@ int getOhms(int R){
 int _tmain(int argc, _TCHAR* argv[])
 {
 
-	const int size = 999999;	// 512 para ajustarse al maximo valor de la version 2.0 compute capability cuda
+	const int size = 999999;	// tamaño del espacio de busqueda
 
-	//float *a = new float[size];
-	//float r[size] = { 0 };
 	float *r = new float[size];
 	//
 	// Preparar espacio de busqueda
 
-	printf("VECTOR INIT:\n");
+	printf("Buscador:\n");
 
-	/*
-	for (int i = 0; i < size; i++){
-		printf("r[%d]: %f\n", i, r[i]);
-	}
-	*/
 
-	int RL = 300;
-	float Vi = 10.0;
-	float Vd = 4.14;
+	int RL;
+	float Vi;
+	float Vd;
 
+	printf("RL (int): ");
+	scanf_s("%d", &RL);
+	printf("Vi (float): ");
+	scanf_s("%f", &Vi);
+	printf("V deseado (float): ");
+	scanf_s("%f", &Vd);
 
 	
 	//Invocar la rutina para funcion objetivo con CUDA
@@ -69,9 +68,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	
 
-
-
-	printf("SUCESS!!: \n");
+	printf("EXITO!!: \n");
 
 	float min = 999999.9;
 	float max = 0;
@@ -97,14 +94,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	printf("mejor encontrado[%d](minimo): %f, con R1: %d y R2: %d\n", minPos, min, getOhms(minPos/1000), getOhms(minPos%1000));
 	printf("mejor encontrado[%d](maximo): %f, con R1: %d y R2: %d\n", maxPos, max, getOhms(maxPos / 1000), getOhms(maxPos % 1000));
 
-	/*
-	for (int i = 0; i < size; i++)
-	{
-		printf("Evaluacion: %f, R1: %d, R2:%d \n", r[i], getOhms(i/1000), getOhms(i%1000));
-	}*/
 	
 	delete[] r;
 
+	getchar();
 	getchar();
 	return 0;
 }
